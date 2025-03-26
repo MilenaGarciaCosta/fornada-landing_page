@@ -1,0 +1,67 @@
+@import "./reset.css";
+
+@font-face {
+    font-family: 'Bellerose';
+    src: url(../assets/fonts/Bellerose.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Champagne';
+    src: url(../assets/fonts/Champagne_Limousines.woff) format('woff');
+}
+
+:root{
+    --branco: #f2f2f2;
+    --preto: #231F20;
+    --amarelo: #FF9D00;
+    --laranja_medio: #F26822;
+    /*--laranja_escuro: #E63B25;*/
+    --laranja_escuro: #a92c1c;
+    --bege: #F3ECD8;
+}
+
+.no_select{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bege);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_manutencao{
+    height: 120px;
+}
+
+.mensagem_atualizacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bellerose';
+    color: var(--laranja_escuro);
+}
+
+.mensagem_atualizacao h2{
+    font-size: 25px;
+    margin: 35px 0 5px 0;
+    font-family: 'Champagne';
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.mensagem_atualizacao p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0 10px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
